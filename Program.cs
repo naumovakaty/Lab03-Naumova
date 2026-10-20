@@ -133,3 +133,14 @@ Console.Write("Введите целое число: ");
 int Number = int.Parse(Console.ReadLine());
 bool isEven = (Number % 2 == 0);
 Console.WriteLine($" Число четное?   {isEven}");
+
+Console.WriteLine();
+Console.WriteLine("Инкремент в выражении");
+int number = 5;
+int number1 = number++; //сначала возвратит текущее значение, а потом увеличит на 1
+Console.WriteLine($"Пример 1: number1 выводит: {number1}");
+Console.WriteLine($"После number = {number++}");
+int a = 5;
+int b = ++a;
+Console.WriteLine($" ПРимер 2: a = {b}"); //сначала увеличивает на 1
+Console.WriteLine($"После этого a ={b}");
