@@ -144,3 +144,16 @@ int a = 5;
 int b = ++a;
 Console.WriteLine($" ПРимер 2: a = {b}"); //сначала увеличивает на 1
 Console.WriteLine($"После этого a ={b}");
+
+Console.WriteLine();
+Console.WriteLine("Калькулятор скидки");
+
+Console.Write("Введите сумму покупки: ");
+double summa = Convert.ToDouble(Console.ReadLine());
+Console.Write("Есть ли карта постоянного клиента? (1 - да, 0 - нет):");
+int Card = Convert.ToInt32(Console.ReadLine());
+bool hasCard = Card == 1;
+Console.Write("Введите количество товаров в чеке: ");
+int Count = Convert.ToInt32(Console.ReadLine());
+bool eligibleForDiscount = (summa >= 3000 && Count >= 3) || hasCard;
+Console.WriteLine($"Право на скидку: {eligibleForDiscount}");
